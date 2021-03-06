@@ -27,9 +27,31 @@ router.get('/', (req, res) => {
   });
 });
 
+// find one category by its `id` value
 router.get('/:id', (req, res) => {
-  // find one category by its `id` value
-  // be sure to include its associated Products
+  Category.findOne({
+    where:{
+      id: req.params.id
+    },
+    // be sure to include its associated Products
+    // include: [
+    //   {
+    //     model: Product,
+    //     attributes: ['product_name']
+    //   }
+    // ]
+  })
+  .then(dbCategoryData => {
+    if (!dbCategoryData) {
+      res.status(404).json({ message: 'No category found with this id' });
+      return;
+    }
+    res.json(dbCategoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 // create a new category
@@ -59,7 +81,7 @@ router.put('/:id', (req, res) => {
   )
   .then(dbCategoryData => {
     if (!dbCategoryData) {
-      res.status(404).json({ message: 'No post found with this id' });
+      res.status(404).json({ message: 'No category found with this id' });
       return;
     }
     res.json(dbCategoryData);
@@ -79,7 +101,7 @@ router.delete('/:id', (req, res) => {
   })
   .then(dbCategoryData => {
     if (!dbCategoryData) {
-      res.status(404).json({ message: 'No user found with this id' });
+      res.status(404).json({ message: 'No category found with this id' });
       return;
     }
     res.json(dbCategoryData);
