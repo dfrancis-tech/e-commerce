@@ -11,13 +11,13 @@ router.get('/', (req, res) => {
       'id',
       'category_name'
     ],
-    // be sure to include its associated Products
-    // include: [
-    //   {
-    //     model: Product,
-    //     attributes: ['product_name']
-    //   }
-    // ]
+    //include its associated Products
+    include: [
+      {
+        model: Product,
+        attributes: ['product_name']
+      }
+    ]
   }
   )
   .then(dbCategoryData => res.json(dbCategoryData))
@@ -33,13 +33,13 @@ router.get('/:id', (req, res) => {
     where:{
       id: req.params.id
     },
-    // be sure to include its associated Products
-    // include: [
-    //   {
-    //     model: Product,
-    //     attributes: ['product_name']
-    //   }
-    // ]
+    //include its associated Products
+    include: [
+      {
+        model: Product,
+        attributes: ['product_name']
+      }
+    ]
   })
   .then(dbCategoryData => {
     if (!dbCategoryData) {
