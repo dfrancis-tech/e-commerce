@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       'id',
       'category_name'
     ],
-     // be sure to include its associated Products
+    // be sure to include its associated Products
     // include: [
     //   {
     //     model: Product,
@@ -48,8 +48,24 @@ router.put('/:id', (req, res) => {
   // update a category by its `id` value
 });
 
+// delete a category by its `id` value
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
+  Category.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then(dbCategoryData => {
+    if (!dbCategoryData) {
+      res.status(404).json({ message: 'No user found with this id' });
+      return;
+    }
+    res.json(dbCategoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 module.exports = router;
