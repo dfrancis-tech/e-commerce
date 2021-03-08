@@ -79,21 +79,21 @@ Endpoints can be tested in Insomnia core or similar API client after start runni
 The list of End Points are:
 * Category
     * Return all categories or create category  
-        localhost:3001/api/categories  
+        `http://localhost:3001/api/categories` 
     * Get a single category, update or delete a category  
-        localhost:3001/api/categories/:id
+        `http://localhost:3001/api/categories/:id`
 * Product
     * Return all products or create product  
-        localhost:3001/api/products  
+        `http://localhost:3001/api/products`  
     * Get a single product, update or delete a product  
-        localhost:3001/api/products/:id
+        `http://localhost:3001/api/products/:id`
 * Tag
     * Return all tags or create tag  
-        localhost:3001/api/tags  
+        `http://localhost:3001/api/tags`  
     * Get a single tag, update or delete a tag  
-        localhost:3001/api/tags/:id  
+        `http://localhost:3001/api/tags/:id`  
 
-The screenshots given below are Testing executed in Insomnia Core.    
+The screenshots given below shows Testing executed in Insomnia Core.    
 > Animation showing GET routes to return all categories, all products, and all tags being tested in Insomnia Core  
 ![GET routes](/assets/images/GET-all-models.gif)  
 > Animation showing GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core  
