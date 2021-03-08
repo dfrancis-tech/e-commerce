@@ -58,6 +58,10 @@ The project's repo link: https://github.com/rosefrancis-tech/e-commerce
 In order to run the application in your local, follow the steps
 * Install [Node.js](https://nodejs.org/en/), [MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 * Download the codes from [repo](https://github.com/rosefrancis-tech/e-commerce)
+* In the root of the repo, create a file named `.env` and enter the database name, MySQL user and password like shown below. 
+`DB_NAME='ecommerce_db'
+ DB_USER='your-mysql-username'
+ DB_PW='your-mysql-password'`
 * In the terminal navigate to the local repo 
 * To install dependencies, run `npm install`
 * To [create database](https://drive.google.com/file/d/1Z5hmoqcAQ3qq2GC4aOYkCr6VuG4_HmWX/view?usp=sharing), open MySQL shell and run `source db/schema.sql`  
@@ -67,7 +71,6 @@ In order to run the application in your local, follow the steps
 ![Start and Seed](/assets/images/Start-Seed.gif)
 * To test endpoints, follow [Tests](#Tests)
 * To exit, type `Ctrl+C` in terminal  
-
 
 ## Tests
 
@@ -90,12 +93,16 @@ The list of End Points are:
     * Get a single tag, update or delete a tag  
         localhost:3001/api/tags/:id  
 
-Testing in Insomnia Core are given below as screenshots.  
-
+Testing in Insomnia Core are given below as screenshots.    
+> Animation showing GET routes to return all categories, all products, and all tags being tested in Insomnia Core  
 ![GET routes](/assets/images/GET-all-models.gif)  
+> Animation showing GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core  
 ![Get routes by id](/assets/images/GET-by-id.gif)  
-![Category routes](/assets/images/POST-PUT-DELETE-category.gif)  
+> Animation showing the POST, PUT, and DELETE routes for categories being tested in Insomnia Core  
+![Category routes](/assets/images/POST-PUT-DELETE-category.gif) 
+> Animation showing the POST, PUT, and DELETE routes for products being tested in Insomnia Core   
 ![Product routes](/assets/images/POST-PUT-DELETE-product.gif)  
+> Animation showing the POST, PUT, and DELETE routes for tags being tested in Insomnia Core  
 ![Tag routes](/assets/images/POST-PUT-DELETE-tag.gif)  
 
 ## Video Links
