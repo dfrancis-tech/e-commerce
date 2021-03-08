@@ -93,7 +93,7 @@ The list of End Points are:
     * Get a single tag, update or delete a tag  
         `http://localhost:3001/api/tags/:id`  
 
-The screenshots given below shows Testing executed in Insomnia Core.    
+The screenshots given below show Testing executed in Insomnia Core.    
 > Animation showing GET routes to return all categories, all products, and all tags being tested in Insomnia Core  
 ![GET routes](/assets/images/GET-all-models.gif)  
 > Animation showing GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core  
@@ -107,10 +107,11 @@ The screenshots given below shows Testing executed in Insomnia Core.
 
 ## Video Links
 
-1. [Set up Database](https://drive.google.com/file/d/1Z5hmoqcAQ3qq2GC4aOYkCr6VuG4_HmWX/view?usp=sharing)
-2. [Start and Seed](https://drive.google.com/file/d/1xaby8Zm2IMsie3iGWI3rH932ihzES0lZ/view?usp=sharing)
-3. [GET routes](https://drive.google.com/file/d/1ouur7fNtbI1g9ZchEe-SM9dd8CzSDStt/view?usp=sharing) to return all categories, all products, and all tags being tested in Insomnia Core
-4. [Get routes by id](https://drive.google.com/file/d/1U52CSpug9DoC9stL12tKZPRByAF_khl5/view?usp=sharing) to return a single category, a single product, and a single tag being tested in Insomnia Core
-5. [Category routes](https://drive.google.com/file/d/1UCELBBtd0VoF6D1huoPDUow1lESHldn7/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core
-6. [Product routes](https://drive.google.com/file/d/1a0jU1GgFtHsHmkdgNm-mYXfNN1jMWJYm/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core
-7. [Tag routes](https://drive.google.com/file/d/15FsipZ_IPN_uuiN2rOrhORqiE7YTqsVA/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core
+1. [Technical acceptance criteria](https://drive.google.com/file/d/10D1m-odInhGbG-ntK111bcRiak8oBZ7Y/view?usp=sharing)
+2. [Set up Database](https://drive.google.com/file/d/1Z5hmoqcAQ3qq2GC4aOYkCr6VuG4_HmWX/view?usp=sharing)
+3. [Start and Seed](https://drive.google.com/file/d/1xaby8Zm2IMsie3iGWI3rH932ihzES0lZ/view?usp=sharing)
+4. [GET routes](https://drive.google.com/file/d/1ouur7fNtbI1g9ZchEe-SM9dd8CzSDStt/view?usp=sharing) to return all categories, all products, and all tags being tested in Insomnia Core
+5. [Get routes by id](https://drive.google.com/file/d/1U52CSpug9DoC9stL12tKZPRByAF_khl5/view?usp=sharing) to return a single category, a single product, and a single tag being tested in Insomnia Core
+6. [Category routes](https://drive.google.com/file/d/1UCELBBtd0VoF6D1huoPDUow1lESHldn7/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core
+7. [Product routes](https://drive.google.com/file/d/1a0jU1GgFtHsHmkdgNm-mYXfNN1jMWJYm/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core
+8. [Tag routes](https://drive.google.com/file/d/15FsipZ_IPN_uuiN2rOrhORqiE7YTqsVA/view?usp=sharing) to POST, PUT, and DELETE routes for categories being tested in Insomnia Core  
