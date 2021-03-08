@@ -59,9 +59,9 @@ In order to run the application in your local, follow the steps
 * Install [Node.js](https://nodejs.org/en/), [MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 * Download the codes from [repo](https://github.com/rosefrancis-tech/e-commerce)
 * In the root of the repo, create a file named `.env` and enter the database name, MySQL user and password like shown below.  
-`DB_NAME='ecommerce_db'  
- DB_USER='your-mysql-username'  
- DB_PW='your-mysql-password'`  
+`DB_NAME='ecommerce_db'`  
+`DB_USER='your-mysql-username'`  
+`DB_PW='your-mysql-password'`  
 * In the terminal navigate to the local repo 
 * To install dependencies, run `npm install`
 * To [create database](https://drive.google.com/file/d/1Z5hmoqcAQ3qq2GC4aOYkCr6VuG4_HmWX/view?usp=sharing), open MySQL shell and run `source db/schema.sql`  
