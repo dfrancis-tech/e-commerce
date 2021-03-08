@@ -11,8 +11,9 @@
 
 
 ## Description 
-This project is the back-end of an e-commerce website.
+This project is the back-end of an e-commerce website.  
 The application is deployed in Heroku at https://radiant-castle-40592.herokuapp.com/  
+
 **Built With**
 * JavaScript ES5  
 * JavaScript ES6  
@@ -22,6 +23,8 @@ The application is deployed in Heroku at https://radiant-castle-40592.herokuapp.
 * npm dotenv express mysql2 sequelize nodemon
 * MySQL
 * REST
+* Heroku
+* JawsDB
 
 ## User Story
 
